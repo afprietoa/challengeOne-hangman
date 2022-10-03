@@ -1,22 +1,20 @@
-# Universo
+# Universe
 
-- El conjunto S representa el repertorio de palabras del juego que contiene n cadenas de texto ({S1,S2,S3,...,Sn})
-- El conjunto E representa los estados durante la ahorca que contiene m números de enteros ({E1,E2,E3,...,Em})
+- The set S represents the repertoire of words of the game that contains n text strings ({S1,S2,S3,...,Sn})
+- the set E represents the states during the hanging that contains m numbers of integers ({E1,E2,E3,...,Em})
 
-Existen 3 estados principales G (Ganado), P (Perdido),I (Inicial) que pertenecen al conjunto E. Para saber cuan cerca el estado está a la ahorca se define un criterio de ordenación w como el orden descendente  de numeros enteros donde 8 es ganado y 1 es perdido. Criterio que se  evalua en la función de proximidad PROXw(x) retornando el siguiente estado más cernano a la ahorca de X.
+There are 3 main states W (Won), L (Lost),I (Initial) that belong to the set E. To know how close the state is to hanging, a sort criterion is defined as descending order of integers where 8 is won and 1 is lost. Criterin that is evaluated in the proximity function PROXw(x) returning the next closest state to the hanging X.
 
-# Configuración
+# Configuration
 
-la configuración nos da los elementos del juego, por lo que si la configuración es guardada es posible reanudar el juego en cualquier momento
+The configuration gives us the elements of the game, so if the configuration is saved it is possible to resume the game at any time.
 
-## Elementos del juego
+## Game elements
 
-- La cadena que se va a adivinar representa el subconjunto S que contiene las letras Sk que conforman la palabra a  adivinar.
-- El estado actual a la ahorca representa el elememento Ex que pertenece al conjunto E
-- Los caracteres adivinadas de cada intento son representadas por el conjunto K , si x pertenece a K entonces x es una letra de Sk
-- los caracteres errados de cada intento son representados por el conjunto L, si x pertenece a L entonces x no es una letra de Sk
-
-El conjunto de configuraciones se representa con R
+- the string to be guessed represents the subset SS that contains the letter SSx that make up the word to be gussed.
+- The current hanging state represents the element Ex that belongs to the set E.
+- The gussed characters of each attempt are represented by the set W , if x belongs to W then x is a letter of SS.
+- The wronged characters of each attempt are represented by the set L, if x belongs to L then x is not a letter of SS.
 
 ### Ejemplo
 
@@ -24,7 +22,7 @@ S = {"alura"}
 E = {1,2,3,4,5,6,7,8}
 Prox(X) = X-1
 
-Sk= {"A","L","U","R","A"}
-Ex = ...
-K = {"A", "L"}
+SS= {"A","L","U","R","A"}
+EX = ...
+W = {"A", "L"}
 L= {"B","J","K","C"}
