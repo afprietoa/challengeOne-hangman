@@ -18,7 +18,7 @@ la configuración nos da los elementos del juego, por lo que si la configuració
 
 El conjunto de configuraciones se representa con R
 
-Ejemplo
+### Ejemplo
 
 S = {"alura"}
 E = {1,2,3,4,5,6,7,8}
