@@ -25,21 +25,44 @@ header{
     max-width: 100%;
     margin: 2.25rem;
 }
-.buttons{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 19.8rem;
-    margin-top: 1rem;
-    gap: 1.2rem;
+}
+.new-word{
+    width: 31.25rem;
+    height: 15rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    color:#0A3871;
+    background-color: transparent;
+    resize: none;
+}
+.alert{
+    width:90%;
 
+}
+.alert p{
+    width: 100%;
+    text-align: left;
+    margin-top: 1.5rem;
+    font-size: 1.2em;
+    color:#495057;
+}
+.alert p::before{
+    content: url(../assets/icons/alert.png);
+    padding-right: 1em;
+}
+.buttons{
+    margin-top: 1rem;
 }
 
 [type="button"]{
     width: 15rem;
-    height: 4.5rem;
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     border: 1px solid #0a3871;
     color: #0a3871;
     background: inherit;
@@ -47,9 +70,6 @@ header{
 }
 
 .blue-button{
-    width: 18.75rem;
-    height:6.5rem;
     background: #0a3871;
     color: #fff;
-    
 }

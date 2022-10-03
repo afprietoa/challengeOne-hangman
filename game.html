@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/game.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/icons/logo.png" alt="alura-logo">
+    </header>
+    <main>
+        <div class="hangman">
+            <img alt="hangman" class="hangman-img" id="hangmanImg">
+        </div>
+        <img src="" alt="">
+        <div class="guessed-string" id="guessedString">
+            <!-- <span class="letter guessed-letter">A</span>
+            <span class="letter guessed-letter">L</span>
+            <span class="letter guessed-letter"></span>
+            <span class="letter guessed-letter"></span>
+            <span class="letter guessed-letter">A</span> -->
+        </div>
+        <div class="wronged-string" id="wrongedString">
+            <!-- <span class="letter wronged-letter ">B</span>
+            <span class="letter wronged-letter ">J</span>
+            <span class="letter wronged-letter ">K</span>
+            <span class="letter wronged-letter ">C</span> -->
+        </div>
+        <form action="javascript:void(0)" class="buttons">
+            <input type="button" class="blue-button" value="New Game" onclick="newGame()">
+            <input type="button" id="back" value="Desist">
+        </form>
+    </main>
+    <script src="./scripts/game.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

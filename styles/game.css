@@ -17,29 +17,56 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 65vh;
 }
 header{
     display: flex;
     max-width: 100%;
     margin: 2.25rem;
 }
-.buttons{
+.hangman{
+    max-width: 100%;
+    max-height: 100%;
+    width: 14.75rem;
+    height: 16.75rem;
+    margin-bottom: 2rem;
+}
+.hangman-img{
+    width: 100%;
+    height: 100%; 
+}
+.guessed-string{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 19.8rem;
+    color: #002462;
+    font-size: 1.8rem;
+}
+.wronged-string{
+    margin: 1rem;
+    color: #242d34;
+    font-size: 1rem;
+}
+.letter{
+    display: inline-block;
+    vertical-align: middel;
+    text-align: center
+}
+.guessed-letter{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 0.5rem;
+    border-bottom: 2px solid #002462;
+    line-height: 4.5rem;
+}
+.wronged-letter{
+    margin-left: 1rem;
+}
+.buttons{
     margin-top: 1rem;
-    gap: 1.2rem;
-
 }
 
 [type="button"]{
     width: 15rem;
-    height: 4.5rem;
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     border: 1px solid #0a3871;
     color: #0a3871;
     background: inherit;
@@ -47,9 +74,6 @@ header{
 }
 
 .blue-button{
-    width: 18.75rem;
-    height:6.5rem;
     background: #0a3871;
     color: #fff;
-    
 }
